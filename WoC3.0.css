@@ -1,0 +1,52 @@
+* {
+    background-color: #dcd9cd;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+  }
+  h1{
+                  color:white;
+                  font-size:250%;
+                  padding: 1%;;
+                  background-color:red;
+                  border:0.2em groove #120a8f;
+                  margin-top:3%;
+          margin-left:5vw;
+          margin-right:5vw;
+  }
+  @media only screen and(min width="2304px"){
+  h1 {
+    color: white;
+    font-size: 400%;
+    padding-left:1%;
+    padding-right:1%;
+    background-color: black;
+    border: 0.2em solid #120a8f;
+    margin-top: 3%;
+    margin-left:20%;
+    margin-right:20%
+  }
+  }
+  table,
+  th,
+  td {
+    border: 2px solid red;
+    margin-top: 20%;
+    border:3px groove rgb(255,70,71);
+    margin-top:5vh;
+    margin-bottom:20vh;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  #head th {
+    align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: green;
+    color: white;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
