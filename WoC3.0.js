@@ -197,3 +197,9 @@ function changeTheme()
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+function visibility()
+{
+  var element1 = document.getElementById("head");
+  element1.classList.toggle("head");
+}

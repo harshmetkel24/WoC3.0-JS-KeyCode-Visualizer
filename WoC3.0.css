@@ -3,18 +3,34 @@
     font-family: 'Fraunces', serif;
   }
 
-#toggleTheme
-{
-  
-}
   .dark-mode
   {
     background-color: black;
     color: white;
   }
-  #toggle 
+  #toggleTheme, #toggleHide
   {
-    border: 3px solid black;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .head
+  {
+    display: none;
+  }
+  
+  #btn1
+  {
+    border-radius: 3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top : 0;
+  }
+  #btn2
+  {
+    border-radius: 3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top : 0
   }
 
   h1{
@@ -28,10 +44,8 @@
           margin-left:5vw;
           margin-right:5vw;
   }
-  h1:hover{
-    background-color: rgba(126, 145, 206, 0.699);
-  }
-  @media only screen and(min width="768px"){
+
+  @media screen and(min width="768px"){
   h1 {
     color: white;
     font-size: 400%;
