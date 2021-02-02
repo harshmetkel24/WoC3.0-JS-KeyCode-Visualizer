@@ -198,24 +198,35 @@ function changeTheme()
   element.classList.toggle("dark-mode");
 }
 
+// function visibility()
+// {
+//   var element1 = document.getElementById("head");
+//   element1.classList.toggle("head");
+// }
 function visibility()
 {
-  var element1 = document.getElementById("head");
-  element1.classList.toggle("head");
+  var element1 = document.getElementsByTagName("tBody");
+  element1.innerHTML=output;
 }
 
-document.addEventListener('keydown',(event)=>{
-  const keyName = event.which;
 
-  for (const x in keyCodes) {
-    if(keyName==x){
-      console.log("inside if");
-      document.getElementById("tBody").style.backgroundColor=rgba(206, 226, 253, 0.541);
-    }  
-    else {
-      alert("Please check you have enter wrong key.");
-      console.log("inside else");
-      break;
-    }
-  }
+window.addEventListener('keydown',(event)=>{
+  console.log(event);
+  var output2 = "";
+
+  output2+=`
+              <span>${event.which}<span><br>
+
+              <span>${event.key}</span>
+              <span>${event.location}</span>
+              <span>${event.code}</span>
+              <span>${event.shiftKeyd}</span>
+              <span>${event.metaKey}</span>
+              <span>${event.altKey}</span>
+              <span>${event.ctrlKey}</span>
+           `
+
+  document.getElementById("secret").innerHTML = output2;
+
 });
+

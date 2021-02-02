@@ -13,6 +13,13 @@
     margin-left: auto;
     margin-right: 0;
   }
+  #secret
+  {
+    font-size: 300%;
+    font-weight: 800;
+    padding: 5%;
+    margin: auto;
+  }
   #tBody :hover
   {
     background-color: rgba(206, 226, 253, 0.541);
