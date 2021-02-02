@@ -203,3 +203,19 @@ function visibility()
   var element1 = document.getElementById("head");
   element1.classList.toggle("head");
 }
+
+document.addEventListener('keydown',(event)=>{
+  const keyName = event.which;
+
+  for (const x in keyCodes) {
+    if(keyName==x){
+      console.log("inside if");
+      document.getElementById("tBody").style.backgroundColor=rgba(206, 226, 253, 0.541);
+    }  
+    else {
+      alert("Please check you have enter wrong key.");
+      console.log("inside else");
+      break;
+    }
+  }
+});

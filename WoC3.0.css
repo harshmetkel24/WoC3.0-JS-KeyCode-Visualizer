@@ -13,6 +13,11 @@
     margin-left: auto;
     margin-right: 0;
   }
+  #tBody :hover
+  {
+    background-color: rgba(206, 226, 253, 0.541);
+    cursor: pointer;
+  }
   .head
   {
     display: none;
@@ -23,6 +28,8 @@
     border-radius: 3px;
     position: -webkit-sticky;
     position: sticky;
+    cursor : pointer;
+    transition: all 0.5s;
     top : 0;
   }
   #btn2
@@ -30,7 +37,8 @@
     border-radius: 3px;
     position: -webkit-sticky;
     position: sticky;
-    top : 0
+    cursor : pointer;
+    top : 0;
   }
 
   h1{
