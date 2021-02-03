@@ -13,13 +13,46 @@
     margin-left: auto;
     margin-right: 0;
   }
-  #secret
-  {
-    font-size: 300%;
-    font-weight: 800;
-    padding: 5%;
-    margin: auto;
+  .card1 .card1 .card1 .card1 {
+    position: absolute;
+    display: block;
   }
+ 
+  .mainCard
+  {
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .cardsTitle
+  {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 550;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(152, 189, 236);
+    padding: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  .cardsContent
+  {
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid rgb(31, 110, 214);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    padding: 1%;
+    padding-bottom: 2%;
+    box-sizing: content-box;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
   #tBody :hover
   {
     background-color: rgba(206, 226, 253, 0.541);
@@ -30,21 +63,13 @@
     display: none;
   }
   
-  #btn1
+  #btn1, #btn2, #btn3
   {
     border-radius: 3px;
     position: -webkit-sticky;
     position: sticky;
     cursor : pointer;
     transition: all 0.5s;
-    top : 0;
-  }
-  #btn2
-  {
-    border-radius: 3px;
-    position: -webkit-sticky;
-    position: sticky;
-    cursor : pointer;
     top : 0;
   }
 

@@ -198,35 +198,69 @@ function changeTheme()
   element.classList.toggle("dark-mode");
 }
 
-// function visibility()
-// {
-//   var element1 = document.getElementById("head");
-//   element1.classList.toggle("head");
-// }
-function visibility()
-{
-  var element1 = document.getElementsByTagName("tBody");
-  element1.innerHTML=output;
+function copyThis() {
+  /* Get the text field */
+  var copyText = document.getElementById("keyVal");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
 }
 
+document.getElementById("secret").className="secretStyle";
 
 window.addEventListener('keydown',(event)=>{
+  document.getElementById("head").style.display="none";
+
   console.log(event);
   var output2 = "";
 
   output2+=`
-              <span>${event.which}<span><br>
-
-              <span>${event.key}</span>
-              <span>${event.location}</span>
-              <span>${event.code}</span>
-              <span>${event.shiftKeyd}</span>
-              <span>${event.metaKey}</span>
-              <span>${event.altKey}</span>
-              <span>${event.ctrlKey}</span>
+              <div class="bodyOfCards">
+              <div class="mainCard">${event.which}</div>
+              <div class="cards">
+                <div class="card1">
+                  <div class="cardsTitle">event.key</div>
+                  <div class="cardsContent" id="keyVal">${event.key}</div>
+                </div>
+                <div class="card2">
+                  <div class="cardsTitle">event.location</div>
+                  <div class="cardsContent">${event.location}</div>
+                </div>
+                <div class="card3">
+                  <div class="cardsTitle">event.code</div>
+                  <div class="cardsContent">${event.code}</div>
+                </div>
+                <div class="card4">
+                  <div class="cardsTitle">event.Shiftkey</div>
+                  <div class="cardsContent">${event.shiftKey}</div>
+                </div>
+                <div class="card5">
+                  <div class="cardsTitle">event.metakey</div>
+                  <div class="cardsContent">${event.metaKey}</div>
+                </div>
+                <div class="card6">
+                  <div class="cardsTitle">event.altkey</div>
+                  <div class="cardsContent">${event.altKey}</div>
+                </div>
+                <div class="card7">
+                  <div class="cardsTitle">event.ctrlkey</div>
+                  <div class="cardsContent">${event.ctrlKey}</div>
+                </div>
+              </div>
+              </div>
            `
-
   document.getElementById("secret").innerHTML = output2;
-
 });
 
+function visibility()
+{
+  var element1 = document.getElementById("head");
+  element1.classList.toggle("head");
+}
