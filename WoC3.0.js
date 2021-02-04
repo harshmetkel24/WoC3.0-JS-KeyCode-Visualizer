@@ -200,7 +200,7 @@ function changeTheme()
 
 function copyThis() {
   /* Get the text field */
-  var copyText = document.getElementById("keyVal");
+  var copyText = document.getElementsByClassName("mainCard");
 
   /* Select the text field */
   copyText.select();
@@ -224,7 +224,7 @@ window.addEventListener('keydown',(event)=>{
   output2+=`
               <div class="bodyOfCards">
               <div class="mainCard">${event.which}</div>
-              <div class="cards">
+              <span class="cards">
                 <div class="card1">
                   <div class="cardsTitle">event.key</div>
                   <div class="cardsContent" id="keyVal">${event.key}</div>
@@ -253,7 +253,7 @@ window.addEventListener('keydown',(event)=>{
                   <div class="cardsTitle">event.ctrlkey</div>
                   <div class="cardsContent">${event.ctrlKey}</div>
                 </div>
-              </div>
+              </span>
               </div>
            `
   document.getElementById("secret").innerHTML = output2;

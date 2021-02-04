@@ -8,16 +8,25 @@
     background-color: black;
     color: white;
   }
+  .dark-mode .cardsTitle
+  {
+    background-color: rgb(136, 24, 241);
+  }
+  .dark-mode .mainCard
+  {
+    text-shadow: blue 1px 1px;
+  }
   #toggleTheme, #toggleHide
   {
     margin-left: auto;
     margin-right: 0;
   }
-  .card1 .card1 .card1 .card1 {
-    position: absolute;
-    display: block;
+
+  .cards
+  {
+    display: -moz-inline-box;
   }
- 
+
   .mainCard
   {
     font-size: 80px;
@@ -32,12 +41,17 @@
     font-weight: 550;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid rgb(17, 102, 212);
     background-color: rgb(152, 189, 236);
     padding: 1%;
     margin-left: 35%;
     margin-right: 35%;
   }
 
+  .card1 .card2 .card3 .card4 .card5 .card6 .card7
+  {
+    display: inline-block;
+  }
   .cardsContent
   {
     font-size: 30px;
@@ -51,6 +65,7 @@
     box-sizing: content-box;
     margin-left: 35%;
     margin-right: 35%;
+    margin-bottom: 5px;
   }
 
   #tBody :hover
