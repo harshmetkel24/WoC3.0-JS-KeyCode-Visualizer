@@ -8,6 +8,11 @@
     background-color: black;
     color: white;
   }
+  #hiddenInput
+  {
+    display: none;
+    visibility: hidden;
+  }
   .dark-mode .cardsTitle
   {
     background-color: rgb(136, 24, 241);

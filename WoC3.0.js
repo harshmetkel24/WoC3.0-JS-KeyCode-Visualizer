@@ -190,6 +190,11 @@ for(i in keyCodes)
             </tr>`;
 }
 document.getElementById("tBody").innerHTML=output;
+function visibility()
+{
+  var element1 = document.getElementById("head");
+  element1.classList.toggle("head");
+}
 // tBody is ID of table body
 
 function changeTheme()
@@ -198,20 +203,6 @@ function changeTheme()
   element.classList.toggle("dark-mode");
 }
 
-function copyThis() {
-  /* Get the text field */
-  var copyText = document.getElementsByClassName("mainCard");
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
 
 document.getElementById("secret").className="secretStyle";
 
@@ -222,45 +213,61 @@ window.addEventListener('keydown',(event)=>{
   var output2 = "";
 
   output2+=`
-              <div class="bodyOfCards">
-              <div class="mainCard">${event.which}</div>
+              <span class="bodyOfCards">
+              <span class="mainCard">${event.which}</span>
               <span class="cards">
-                <div class="card1">
-                  <div class="cardsTitle">event.key</div>
-                  <div class="cardsContent" id="keyVal">${event.key}</div>
-                </div>
-                <div class="card2">
-                  <div class="cardsTitle">event.location</div>
-                  <div class="cardsContent">${event.location}</div>
-                </div>
-                <div class="card3">
-                  <div class="cardsTitle">event.code</div>
-                  <div class="cardsContent">${event.code}</div>
-                </div>
-                <div class="card4">
-                  <div class="cardsTitle">event.Shiftkey</div>
-                  <div class="cardsContent">${event.shiftKey}</div>
-                </div>
-                <div class="card5">
-                  <div class="cardsTitle">event.metakey</div>
-                  <div class="cardsContent">${event.metaKey}</div>
-                </div>
-                <div class="card6">
-                  <div class="cardsTitle">event.altkey</div>
-                  <div class="cardsContent">${event.altKey}</div>
-                </div>
-                <div class="card7">
-                  <div class="cardsTitle">event.ctrlkey</div>
-                  <div class="cardsContent">${event.ctrlKey}</div>
-                </div>
+                <span class="card1">
+                  <span class="cardsTitle">event.key</span>
+                  <span class="cardsContent" id="keyVal">${event.key}</span>
+                </span>
+                <span class="card2">
+                  <span class="cardsTitle">event.location</span>
+                  <span class="cardsContent">${event.location}</span>
+                </span>
+                <span class="card3">
+                  <span class="cardsTitle">event.code</span>
+                  <span class="cardsContent">${event.code}</span>
+                </span>
+                <span class="card4">
+                  <span class="cardsTitle">event.Shiftkey</span>
+                  <span class="cardsContent">${event.shiftKey}</span>
+                </span>
+                <span class="card5">
+                  <span class="cardsTitle">event.metakey</span>
+                  <span class="cardsContent">${event.metaKey}</span>
+                </span>
+                <span class="card6">
+                  <span class="cardsTitle">event.altkey</span>
+                  <span class="cardsContent">${event.altKey}</span>
+                </span>
+                <span class="card7">
+                  <span class="cardsTitle">event.ctrlkey</span>
+                  <span class="cardsContent">${event.ctrlKey}</span>
+                </span>
               </span>
-              </div>
+              </span>
            `
   document.getElementById("secret").innerHTML = output2;
 });
 
-function visibility()
-{
-  var element1 = document.getElementById("head");
-  element1.classList.toggle("head");
+
+
+
+
+window.addEventListener('keydown',()=>{
+  document.getElementById("hiddenInput").value=`Code=${event.which} Key=${event.key} Location=${event.location}`;
+})
+function copyThis() {
+  /* Get the text field */
+  var copyText = document.getElementsByClassName("hiddenInput")[0];
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied to Clipboard: "+copyText.value);
 }
