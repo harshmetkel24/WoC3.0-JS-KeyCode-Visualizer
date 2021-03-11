@@ -1,0 +1,163 @@
+* {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+  }
+
+  hr
+  {
+    clear: left;
+  }
+
+  #btn1
+  {
+    float: left;
+    margin-left: 70px;
+  }
+  #btn2
+  {
+    float: left;
+    margin-inline: 10px;
+    margin-block-end: 10px;
+  }
+  
+  #btn3
+  {
+    float: left;
+  }
+
+  .dark-mode
+  {
+    background-color: black;
+    color: white;
+    font-style: oblique;
+  }
+
+  .dark-mode h1
+  {
+    font-style: normal;
+  }
+
+  #hiddenInput
+  {
+    display: none;
+    visibility: hidden;
+  }
+  .dark-mode .cardsTitle
+  {
+    background-color: rgb(136, 24, 241);
+  }
+  .dark-mode .mainCard
+  {
+    text-shadow: blue 1px 1px;
+  }
+  #toggleTheme, #toggleHide
+  {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .cards
+  {
+    display: -moz-inline-box;
+  }
+
+  .mainCard
+  {
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .cardsTitle
+  {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 550;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(17, 102, 212);
+    background-color: rgb(152, 189, 236);
+    padding: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  .card1 .card2 .card3 .card4 .card5 .card6 .card7
+  {
+    display: inline-block;
+  }
+  .cardsContent
+  {
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid rgb(31, 110, 214);
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    padding: 1%;
+    padding-bottom: 2%;
+    box-sizing: content-box;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5px;
+  }
+
+  #tBody :hover
+  {
+    background-color: rgba(206, 226, 253, 0.541);
+    cursor: pointer;
+  }
+
+  .head
+  {
+    display: none;
+  }
+
+  h1{
+                  color:white;
+                  text-shadow: 1px 1px white;
+                  font-size:250%;
+                  padding: 1%;;
+                  background-color:red;
+                  border:0.2em groove #120a8f;
+                  margin-top:3%;
+          margin-left:5vw;
+          margin-right:5vw;
+  }
+
+  @media screen and(min width="768px"){
+  h1 {
+    color: white;
+    font-size: 400%;
+    padding-left:1%;
+    padding-right:1%;
+    background-color: black;
+    border: 0.2em solid #120a8f;
+    margin-top: 3%;
+    margin-left:20%;
+    margin-right:20%
+  }
+  }
+  table,
+  th,
+  td {
+    border: 2px solid red;
+    margin-top: 20%;
+    border:3px groove rgb(255,70,71);
+    margin-top:5vh;
+    margin-bottom:20vh;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  #head th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: green;
+    color: white;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

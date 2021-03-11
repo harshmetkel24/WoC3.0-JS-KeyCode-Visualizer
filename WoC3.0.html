@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="WoC3.0.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+	<link rel="icon" href="/favicon.ico" type="image/icon">
+	<title>Key-Code visualiser</title>
+</head>
+
+<body>
+	
+	<h1>WoC3.0</h1>
+
+	<!-- This is input tag created to store the elment which is copied -->
+	<input type="text" id="hiddenInput" class="hiddenInput" value = "passingVal()">
+
+	<div>	
+		<nav id="nav">
+				<button id="btn1" onclick="changeTheme()">Toggle theme</button>
+				<button id="btn2" onclick="visibility()">Show table</button>
+				<button id="btn3" onclick="copyThis()">Copy</button>
+		</nav>
+		<hr size="3x"  width="90%">
+	</div>
+	<table id="head" class="head">
+		<thead class="tHead">	
+			<tr>
+              <th>Keycode</th>
+              <th>Key</th>
+            </tr>
+        </thead>
+          
+        <tbody id="tBody"></tbody>
+        		
+	</table>
+
+	<div id = "secret"></div>
+	<!-- Here secret div is containing the information of key press event -->
+	
+	<script src="WoC3.0.js"></script>
+
+</body>
+
+</html>	
